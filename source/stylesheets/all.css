@@ -613,3 +613,22 @@ p > a:hover {
   background: rgba(142, 166, 187, 0.1);
   color: #D9DFE4;
 }
+
+.cta .second-row {
+  text-align: center;
+}
+
+.cta .second-row .note {
+  color: white;
+}
+
+.cta .second-row .button {
+  float: none;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.header .logo {
+  width: 100%;
+  text-align: center;
+}
