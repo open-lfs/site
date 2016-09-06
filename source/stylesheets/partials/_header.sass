@@ -1,0 +1,49 @@
+/*
+    ////// HEADER
+/*
+
+.row-header
+    background-color: darken($green, 5)
+
+    .row
+        padding: 0
+
+.header
+    +clearfix
+
+    .logo,
+    .navigation
+        $height: 5rem
+        +size(70% $height)
+        line-height: $height
+        float: left
+
+        .link
+            margin-left: 2rem
+
+    .logo
+        text-align: left
+        width: 30%
+
+    .logo a
+        display: inline-block
+        opacity: 1
+        +size(150px 51px)
+        background: url(../images/logo-open-lfs.png) center no-repeat
+        background-size: contain
+        text-indent: -9999px
+        margin-top: 0.8rem
+        transition: all 0.3s
+
+        &:hover
+            opacity: 0.85
+
+        img
+            +size(fit-content)
+
+
+    .navigation
+        text-align: right
+
+        .link
+            color: $white

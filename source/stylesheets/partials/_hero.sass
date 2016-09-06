@@ -1,0 +1,43 @@
+/*
+    ////// HERO
+/*
+.hero
+    text-align: center
+    background-color: $green
+    background-image: url(../images/cover.jpg)
+    background-position: center
+    //@include linear-gradient(50deg, $green, $blue, $fallback: $green)
+    background-size: cover
+    height: 100vh
+
+    &:after
+        content: ''
+        display: inline-block
+        +size(62px 31px)
+        background: url(../images/arrow-bottom.png) center no-repeat
+        background-size: contain
+        position: absolute
+        bottom: 20px
+        left: 50%
+        margin-left: -31px
+
+    .row
+        padding-top: 0
+
+    h1
+        color: $white
+        font-size: 54px
+        font-weight: 300
+        line-height: 1.2rem
+        text-shadow: 0 2px 3px transparentize($black, 0.5)
+
+        strong
+            font-weight: 500
+
+
+    /*
+        ////// HERO CONTENT
+    /*
+    .hero-content
+        padding-top: 30px
+        margin-top: 20vh

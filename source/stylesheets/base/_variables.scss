@@ -1,0 +1,80 @@
+// Typography
+$base-font-family: "Lato", "Open Sans", Arial, sans-serif;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$white: #FFF;
+$black: #0d1319;
+
+$red: #DD341D;
+$red-light: #FF6345;
+
+$sky: #2DBBE9;
+$sky-medium: #6ED4FA;
+$sky-light: #9BE4FF;
+$blue: #0685B9;
+
+$gray: #D9DFE4;
+$gray-medium: #C0CCD6;
+$gray-dark: #8EA6BB;
+$gray-light: #F9F9FA;
+
+$night: #133A51;
+$night-light: #344D6D;
+
+$green: #25CAAB;
+$green-light: #99E0D3;
+$green-dark: #009E81;
+
+
+$brown: #DD4830;
+$orange: rgb(255,128,0);
+$yellow: #EBB934;
+$overlay: rgba(28, 115, 108, 0.2);
+$red: #E44602;
+$red-dark: #922B1F;
+$blue: #2B4559;
+$aquamarina: rgb(58,183,207);
+$silver: #F0F3F4;
+$silver-dark: #CDD7D7;
+$twitter: rgb(69,150,213);
+
+$white: #FFFFFF;
+$black: #1C3340;
+$coal: #253C51;
+$blue: #0075DA;
+$grass: #0CB169;
+$grass-medium: #0CB169;
+$grass-light: #51BD8B;
+$grass-lighter: #BFE2C0;
+$green: #009788;
+$green-light: #009788;
+$green-lighter: #1DBBA1;
+
+$test: transparentize(yellow, 0.6);
+
+// Font Colors
+$base-background-color: $white;
+$base-font-color: $night;
+$action-color: $blue;
+
+// Border
+$base-border-color: $gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

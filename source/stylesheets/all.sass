@@ -1,0 +1,123 @@
+@charset "utf-8"
+
+@import "bourbon"
+// Bitters needs to be imported before Neat
+@import "neat"
+@import "base/base"
+
+// Layout
+@import "partials/hero"
+@import "partials/intro"
+@import "partials/features"
+@import "partials/footer"
+
+// Header
+@import "partials/header"
+
+// Install-guide
+@import "partials/install-guide"
+
+=link
+    border-bottom: 2px solid $grass
+    transition: all 0.3s
+    padding: 0 0.3rem
+
+    &:hover
+        background-color: $grass
+
+h1
+    font-size: 3rem
+    padding-bottom: 2rem
+    font-weight: 300
+
+p
+    color: $black
+    padding-bottom: 1rem
+    font-weight: 400
+    font-size: 16px
+
+p>a
+    color: $grass
+    font-weight: 600
+    +link
+    &:hover
+        color: $white
+
+
+.row
+    //border: 1px solid lime
+    +outer-container
+    padding: 40px 20px
+
+.link
+    +link()
+
+.button
+    background-color: $blue
+    text-transform: none
+
+    &.windows
+        background-color: $blue
+        border: 1px solid $blue
+
+    &.mac
+        background-color: $grass
+        border: 1px solid $grass
+
+    &.linux
+        background-color: transparentize($black, 0.3)
+        border: 1px solid transparentize($black, 0.3)
+
+.cta
+    margin-top: 15vh
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+
+    .button
+        margin-left: 0.5rem
+        min-width: 14rem
+        +span-columns(4)
+        +omega
+        transition: all 0.3s
+
+        &:hover
+            opacity: 0.8
+
+    .link
+        color: $white
+
+.hero .row-hero-header>*
+    margin-left: 30px
+    margin-right: 30px
+
+.second-level .row>*
+    margin: 0 50px
+
+.content .row
+    max-width: 46rem
+
+    >*
+        margin-left: 0
+        margin-right: 0
+
+/*
+    ////// CONTENT
+/*
+.content .row
+    padding: 80px 0
+
+/*
+    ////// FLASH
+/*
+.flash
+    text-align: left
+    background: $blue
+    color: $white
+    +border-top-radius(3px)
+    +border-bottom-radius(3px)
+    padding: 0.5rem 1rem
+
+    &.flash-info
+        background: transparentize($gray-dark, 0.9)
+        color: $gray
