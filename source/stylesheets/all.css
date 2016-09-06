@@ -2,9 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: inherit;
 }
 
@@ -35,16 +33,12 @@ button,
   text-transform: uppercase;
 }
 
-button:hover,
-button:focus, input[type="button"]:hover,
-input[type="button"]:focus, input[type="reset"]:hover,
-input[type="reset"]:focus, input[type="submit"]:hover,
-input[type="submit"]:focus,
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
 button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  background-color: #004c8d;
+  background-color: #004c8e;
   color: #fff;
 }
 
@@ -111,7 +105,7 @@ label abbr {
   display: none;
 }
 
-input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple=multiple],
 textarea {
   background-color: #FFFFFF;
@@ -127,13 +121,13 @@ textarea {
   width: 100%;
 }
 
-input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
 select[multiple=multiple]:hover,
 textarea:hover {
   border-color: #bbc6cf;
 }
 
-input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
 select[multiple=multiple]:focus,
 textarea:focus {
   border-color: #0075DA;
@@ -253,14 +247,11 @@ a {
   transition: color 0.1s linear;
 }
 
-a:active,
-a:focus,
-a:hover {
-  color: #004c8d;
+a:active, a:focus, a:hover {
+  color: #004c8e;
 }
 
-a:active,
-a:focus {
+a:active, a:focus {
   outline: none;
 }
 
@@ -278,8 +269,6 @@ picture {
   max-width: 100%;
 }
 
-/* */
-/* */
 .hero {
   text-align: center;
   background-color: #009788;
@@ -287,8 +276,6 @@ picture {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  /* */
-  /* */
 }
 
 .hero:after {
@@ -344,8 +331,6 @@ picture {
   padding: 0;
 }
 
-/* */
-/* */
 .features {
   background: #0CB169;
   border: 1px solid #0CB169;
@@ -357,7 +342,7 @@ picture {
 }
 
 .features h5 {
-  color: #FFFFFF;
+  color: white;
   font-size: 18px;
 }
 
@@ -376,8 +361,6 @@ picture {
   line-height: 1.8rem;
 }
 
-/* */
-/* */
 .footer {
   background: #253C51 url(../images/pattern-geometric-navy.png) top left;
   text-align: center;
@@ -414,7 +397,7 @@ picture {
 }
 
 .footer .gossip {
-  color: #FFFFFF;
+  color: white;
   font-weight: 300;
   font-size: 26px;
   background: url(../images/background-gossip.png) top center;
@@ -487,8 +470,6 @@ picture {
   color: #FFFFFF;
 }
 
-/* */
-/* */
 h1 {
   font-size: 3rem;
   padding-bottom: 2rem;
