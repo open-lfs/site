@@ -21,7 +21,15 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  # Assets directories
+  set :css_dir, 'stylesheets'
+  set :js_dir, 'javascripts'
+  set :images_dir, 'images'
 end
+
+set :relative_links, true
+ignore ".DS_Store"
+ignore "imageoptim.manifest.yml"
 
 ###
 # Helpers
@@ -36,9 +44,19 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+    # For example, change the Compass output style for deployment
+    activate :minify_css
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+    # Minify Javascript on build
+    activate :minify_javascript
+
+    # Enable cache buster
+    activate :asset_hash
+
+    # Use relative URLs
+    activate :relative_assets
+
+    set :css_dir, 'stylesheets'
+    set :js_dir, 'javascripts'
+    set :images_dir, 'images'
 end
